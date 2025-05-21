@@ -1,0 +1,154 @@
+.checkout-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.checkout-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden; /* To contain the border-radius of thead */
+}
+
+.checkout-page thead {
+    background-color: #f8f9fa;
+}
+
+.checkout-page th, .checkout-page td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-page th {
+    font-weight: bold;
+    color: #555;
+}
+
+.checkout-page tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.checkout-page h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: right;
+}
+
+.checkout-page h3 strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.checkout-page form {
+    text-align: right;
+}
+
+.checkout-page .btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-page .btn:hover {
+    background-color: #218838;
+}
+
+.checkout-page p {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .checkout-page {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .checkout-page h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .checkout-page table thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .checkout-page tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .checkout-page td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px dotted #eee;
+    }
+
+    .checkout-page td:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .checkout-page td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .checkout-page th, .checkout-page td {
+        padding: 8px;
+    }
+
+    .checkout-page h3 {
+        font-size: 1.8rem;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .checkout-page form {
+        text-align: center;
+    }
+
+    .checkout-page .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .checkout-page p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,132 @@
+.cart-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cart-info {
+    flex-grow: 1;
+}
+
+.cart-info h4 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cart-info p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.cart-info p strong {
+    font-weight: bold;
+    color: #555;
+}
+
+.cart-info form {
+    margin-top: 10px;
+}
+
+.cart-info button[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cart-info button[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.cart-container p {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        margin-bottom: 15px;
+        margin-right: 0;
+        width: 80px;
+    }
+
+    .cart-info {
+        width: 100%;
+    }
+
+    .cart-info h4 {
+        font-size: 1.6rem;
+    }
+
+    .cart-info form {
+        margin-top: 15px;
+    }
+}
